@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <link rel="icon" href="../static/images/airplane (1).png">
+  <title>Odyssey</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Stylesheets-->
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CPoppins:400%7CTeko:300,400">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate-01.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flex-slider-02.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl-01.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/templatemo-villa-agency.css') }}">
+
+
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+
+
+.divi454{
+  margin-top: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  background-color: #eefaff;
+  padding: 20px;
+  border-radius: 20px;
+border:2px solid #277ca0;
+align-items: start;
+}
+
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      position: relative;
+      margin-top: 100px;
+      margin-left: 50px;
+    }
+
+    .title {
+      font-size: 28px;
+      color: royalblue;
+      font-weight: 600;
+      letter-spacing: -1px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+    }
+
+    .title::before,
+    .title::after {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      left: 0px;
+      background-color: royalblue;
+    }
+
+    .title::before {
+      width: 18px;
+      height: 18px;
+      background-color: royalblue;
+    }
+
+    .title::after {
+      width: 18px;
+      height: 18px;
+      animation: pulse 1s linear infinite;
+    }
+
+    .message,
+    .signin {
+      color: rgba(88, 87, 87, 0.822);
+      font-size: 14px;
+    }
+
+    .signin {
+      text-align: center;
+    }
+
+    .signin a {
+      color: royalblue;
+    }
+
+    .signin a:hover {
+      text-decoration: underline royalblue;
+    }
+
+    .flex {
+      display: flex;
+      width: 100%;
+      gap: 6px;
+    }
+
+    .form label {
+      position: relative;
+    }
+
+    .form label .input {
+      width: 100%;
+      padding: 10px 10px 20px 10px;
+      outline: 0;
+      border: 1px solid rgba(105, 105, 105, 0.397);
+      border-radius: 10px;
+    }
+
+    .form label .input+span {
+      position: absolute;
+      left: 10px;
+      top: 15px;
+      color: grey;
+      font-size: 0.9em;
+      cursor: text;
+      transition: 0.3s ease;
+    }
+
+    .form label .input:placeholder-shown+span {
+      top: 15px;
+      font-size: 0.9em;
+    }
+
+    .form label .input:focus+span,
+    .form label .input:valid+span {
+      top: 30px;
+      font-size: 0.7em;
+      font-weight: 600;
+    }
+
+    .form label .input:valid+span {
+      color: green;
+    }
+
+    .submit {
+      border: none;
+      outline: none;
+      background-color: royalblue;
+      padding: 10px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 16px;
+      transform: .3s ease;
+    }
+
+    .submit:hover {
+      background-color: rgb(56, 90, 194);
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(0.9);
+        opacity: 1;
+      }
+
+      to {
+        transform: scale(1.8);
+        opacity: 0;
+      }
+    }
+
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="ie-panel pb-0"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="preloader pb-0">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <div class="page mb-0">
+    <header class="section page-header mt-0 mb-0 pb-0 pt-0">
+      <!-- RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+          data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+          data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
+          data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+          data-xxl-stick-up-offset="106px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
+            <span></span>
+          </div>
+
+          <div class="rd-navbar-main-outer mb-0">
+            <div class="rd-navbar-main">
+              <div class="rd-navbar-nav-wrap">
+                <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
+                  <li><a class="icon fa fa-facebook" href="#"></a></li>
+                  <li><a class="icon fa fa-twitter" href="#"></a></li>
+                  <li><a class="icon fa fa-google-plus" href="#"></a></li>
+                  <li><a class="icon fa fa-instagram" href="#"></a></li>
+                </ul>
+                <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav mb-0">
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="/">Home</a>
+                  </li>
+                  <li class="rd-nav-item active"><a class="rd-nav-link" href="/tours">Destinations</a>
+                  </li>
+
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">About </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+
+
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader mb-0">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between">
+      <form class="form" action="/checkout/paypal/{{tour.id}}" method="post">
+        <p class="title">Register </p>
+        <p class="message">Signup now and get full access to our app. </p>
+        <div class="flex">
+          <label>
+            <input required="" placeholder="" type="text" class="input" name="firstName">
+            <span>Firstname</span>
+          </label>
+
+          <label>
+            <input required="" placeholder="" type="text" class="input" name="lastName">
+            <span>Lastname</span>
+          </label>
+        </div>
+
+        <label>
+          <input required="" placeholder="" type="email" class="input" name="email">
+          <span>Email</span>
+        </label>
+
+        <label>
+          <input required="" placeholder="" type="text" class="input" name="personal_id">
+          <span>Personal Id</span>
+        </label>
+       
+        <button class="submit"> Bye Tour</button>
+      </form>
+
+
+
+
+
+      <div class="divi454">
+        <h3>Tour Info</h3>
+        <img src="../static/images/{{tour.picture}}" alt="">
+        <p>Tour Name: {{tour.name}}</p>
+        <p>Tour Price: {{tour.price}}</p>
+        <p>Tour Destination: {{tour.destination}}</p>
+        <p>Tour Description: {{tour.description}}</p>
+        <p>Time Table {{tour.flight_time}} -- {{tour.return_time}}</p>
+
+      </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/counter.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/isotope.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/owl-carousel.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/custom.js') }}"></script>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+
+    <!-- Javascript-->
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/core.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/script.js') }}"></script>
+
+
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>
